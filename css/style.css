@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+header #topnav{
+    height: 60px;
+    background-color: #41658E;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 50px;
+}
+#topnav #logo{
+    padding-top: 20px;
+    float: left;
+    width: 30%;
+}
+#topnav #mainnav{
+    float: right;
+    text-align: right;
+    width: 70%;
+}
+#topnav .logoicon{
+    font-size: 35px;
+    color: #FFF;
+}
+#mainnav .navitem{
+    color: #FFF;
+    margin-left: 35px;
+    display: inline-block;
+    height: 60px;
+    padding: 20px 10px;
+}
+#mainnav .navitem:hover{
+    color: #000;
+}
+#mainnav .active{
+    background-color: #FFF;
+    color: #41658E;
+}
+#head{
+    padding-top:200px;
+}
+#head .sitetitle{
+    background: #41658E;
+    color: #FFF;
+    font-size: 40px;
+    width: 50%;
+    padding: 25px;
+    margin-left: 50px;
+}
+#services{
+    padding: 20px;
+    background-color: #EEE;
+    min-height: 500px; 
+    overflow: hidden;
+    position: relative;
+}
+#services_sec .sec-head{
+    text-align: center;
+    color: #41658E;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+#services_sec .headhr{
+    width: 10%;
+    margin: auto;
+    border: 1px solid #41658E;
+    margin-bottom: 30px;
+}
+#services_sec .service{
+    float: left;
+    width: 32.33333%;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 20px;
+    height: 250px;
+    min-height: 300px;
+}
+#services_sec .service2, #services_sec .service3{
+    margin-left:1.5%;
+}
+.service .num{
+    text-align:center;
+    font-size:30px;
+    width:50px;
+    height:50px;
+    background-color: #41658E;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-bottom:20px;
+    position: absolute;
+    top: 90px;
+}
+.service .service-name{
+    font-size:30px;
+    font-family: 'Arial';
+    color: #41658E;
+    text-transform: capitalize;
+    margin: 20px auto 20px auto;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+.service .service-descr{
+    line-height: 1.5;
+    color: #6D5F5F;
+    text-align: justify;
+    font-family: 'Arial';
+}
+
+#services_sec .service:hover .num{
+    background-color: #FFF;
+    color: #41658E;
+}
+#services_sec .service:hover .service-name{
+    color: #FFF;
+}
+#services_sec .service:hover .service-descr{
+    color: #FFF;
+}
+#services_sec .service:hover{
+    border: 1px solid #CCC;
+    cursor:pointer;
+    background-color: #41658E;;
+}
+.clear{
+    clear: both;
+}
+.sec-head{
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    text-transform: capitalize;
+    padding: 15px 0 10px 0;
+    font-family: 'Arial';
+}
+
+#about-us{
+    background-color: #6085C9;
+    position: relative;
+    z-index: -1;
+}
+.about-info{
+    padding: 10px 500px 100px 30px;
+    background-color: #6085C9;
+    color: #FFF;
+    text-align: justify;
+    line-height: 2;
+}
+#about-us .headhr{
+    width:10%;
+    margin: 0  auto 30px auto;
+    border: 1px solid #FFF;
+    
+}
+.about-image .box-img{
+    position: absolute;
+    border: 5px solid #FFF;
+}
+.about-image .box-back{
+    z-index: 1;
+    top: 200px;
+    right: 65px;
+    bottom: 161px;
+}
+.about-image .box-lastback{
+    z-index: 2;
+    top: 100px;
+    right: 178px;
+    bottom: 261px;
+}
+
+main:hover .box-lastback{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 6;
+}
+main:hover .box-back{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    z-index: 5;
+    cursor: pointer;
+    
+}
+.about-image .box-front{
+    top: 280px;
+    right: 205px;
+    z-index: 3;
+    bottom: 81px;
+}
+main:hover .box-front{
+    border: 5px solid #EAEA31;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 5;
+}
+footer{
+    background: url('../img/bg.jpg') no-repeat center center;
+    height: 300px;
+    background-size: cover;
+}
+
+#footer .side{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+footer #footer{
+    background: rgba(2, 35, 74, 0.8);
+    height: 300px;
+    background-size: cover;
+    padding: 30px;
+    color: #FFF;
+    font-family: 'Arial';
+}
+.social .social-icon{
+    font-size: 22px;
+    margin-left: 7px;
+}
+.info-side .site-about{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.info-side .social{
+    text-align: center;
+    margin-left: 65px;
+}
+#footer .quick-links .qlinks{
+    margin-left: 20px;
+}
+#footer .side-title{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.qlinks .qlink-li{
+    margin-bottom: 8px;
+}
+.qlink-li .qlink-item{
+    color: #FFF;
+    font-size: 12px;
+}
+.qlink-li .qlink-item:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.contact-form .inputf, .contact-form .inputarea, .contact-form .btn{
+    display: block;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #CCC;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.contact-form .inputf, .contact-form .inputarea{
+    text-indent: 15px
+}
+.contact-form .inputarea{
+    color: #716868;
+    resize: 12px;
+}
+.contact-form .inputf:focus, .contact-form .inputarea:focus{
+    border: 1px solid #41658E;
+}
+
+.contact-form .btn:hover{
+    background-color: #CCC;
+    color: #41658E;
+    cursor: pointer;
+}
+.contact-form .fas{
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color: #CCC;  
+    font-size: 13px; 
+}
+.contact-form .btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #41658E;
+    color: #FFF;
+    border: none;
+}
+.contact-form .input-wrapper .send-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px  210px;
+}
+.contact-form .input-wrapper{
+    position: relative; 
+}
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+    background-color: #545151;
+    line-height: 3;
+    font-family: 'Arial';
+    text-transform: capitalize;
+}
